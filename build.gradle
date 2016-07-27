@@ -11,7 +11,7 @@ sourceCompatibility = '1.8'
 // prefer. In this case NetBeans will not add these tasks but you may rely on
 // your own implementation.
 if (!hasProperty('mainClass')) {
-    ext.mainClass = 'com.inkchild.l2nsoft.greenhour'
+    ext.mainClass = 'com.inkchild.gradle'
 }
 
 repositories {
@@ -35,11 +35,11 @@ dependencies {
     
     // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpasyncclient
     compile group: 'org.apache.httpcomponents', name: 'httpasyncclient', version: '4.1.2'
-
-
     
     // https://mvnrepository.com/artifact/com.codesnippets4all/quick-json
     compile group: 'com.codesnippets4all', name: 'quick-json', version: '1.0.4'
 
+    // https://mvnrepository.com/artifact/com.ning/async-http-client
+    compile group: 'org.asynchttpclient', name: 'async-http-client', version: '2.0.11'
 
 }
